@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="This is a page is for you to ask your question or apply as an astronaut. Good luck!">
+  <title>Contact Form</title>
+</head>
+
+<body>
+  <header id="headerForm">
+    <h1 class="contactFormH1">Contact Form</h1>
+  </header>
+
+  <main class="form-container content">
+    <div id="error-message"></div>
+    <form id="contactForm" onsubmit="return validation()">
+      <div class="form-group">
+        <input class="form-control" name="firstName" id="firstName" placeholder="First name">
+
+        <div class="form-group">
+          <input class="form-control" name="lastName" id="lastName" placeholder="Last name">
+
+          <div class="form-group">
+            <input class="form-control" name="phone" id="phone" placeholder="Phone">
+
+            <div class="form-group">
+              <input class="form-control" name="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" name="message" id="message" placeholder="Message "></textarea>
+            </div>
+            <div class="second-container">
+              <button type="submit" class="btn" onsubmit="#" id="submit">Submit</button>
+              <footer class="footer-contactform">
+                <div class="social-container-footer-contact-form">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-youtube"></a>
+                </div>
+              </footer>
+            </div>
+    </form>
+  </main>
+
+
+
+
+
+
+  <!-- <main class="container">
+  <form id="contactForm" novalidate>
+      <div class="input-field">
+        <label for="firstName">First Name</label>
+        <input class="form-control" id="firstName" type="text" placeholder="First name" name="firstName" />
+        <span class="helper-text"></span>
+      </div>
+
+      <div class="input-field">
+        <label for="lastName">Last Name</label>
+        <input class="form-control" id="lastName" type="text" placeholder="Last name" name="lastName" />
+        <span class="helper-text"></span>
+      </div>
+
+      <div class="input-field">
+        <label for="email">Email</label>
+        <input class="form-control" id="email" type="email" placeholder="Email" name="email" />
+        <span class="helper-text"></span>
+      </div>
+
+      <div class="input-field">
+        <label for="phone">Phone</label>
+        <input class="form-control" id="phone" type="text" placeholder="Phone" name="phone" />
+        <span class="helper-text"></span>
+      </div>
+
+      <div class="input-field">
+        <label for="Message">Message</label>
+        <textarea class="form-control" id="message" type="message" placeholder="Message" name="message"></textarea>
+        <span class="helper-text"></span>
+      </div>
+
+      <button type="submit" class="btn" id="submit">Submit</button>
+  </form>
+</main> -->
+
+
+
+
+
+  <script type="text/javascript" src="./js/contactForm.js"></script>
+</body>
+
+</html>
